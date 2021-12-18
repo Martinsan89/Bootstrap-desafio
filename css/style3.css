@@ -1,0 +1,26 @@
+body {
+  background-color: rgb(133, 64, 61);
+}
+.style {
+  font-size: 50px;
+  font-family: serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.red {
+  background-color: rgb(228, 118, 118);
+}
+.text-style {
+  font-family: serif;
+  font-style: oblique;
+}
+.warning {
+  background-color: rgb(243, 218, 74);
+}
+.size {
+  font-size: 30px;
+}
+.hover:hover {
+  background-color: black;
+}

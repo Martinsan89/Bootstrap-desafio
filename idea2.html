@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style2.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand text-style" href="#">Desafio Bootstrap</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav flex-row p-2">
+            <li class="nav-item p-2">
+              <a
+                class="nav-link active text-success"
+                aria-current="page"
+                href="idea1.html"
+                >Idea 1</a
+              >
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link text-important" href="idea2.html">Idea 2</a>
+            </li>
+            <li class="nav-item p-2">
+              <a class="nav-link text-body" href="idea3.html">Idea 3</a>
+            </li>
+            <li class="nav-item dropdown p-2">
+              <a
+                class="nav-link dropdown-toggle text-danger"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Idea 4
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="idea4.html">Formulario</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Logo y texto -->
+      <div>
+        <a class="navbar-brand">
+          <img src="./img/logo.jpg" alt="..." width="150" height="124" />
+        </a>
+      </div>
+      <div class="mx-2 p-3">
+        <p class="text-center bg-dark text-light radius">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
+      </div>
+    </nav>
+
+    <!-- scrollspy -->
+
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3 mt-2">
+      <a class="navbar-brand" href="#">Scrollspy</a>
+      <ul class="nav nav-pills">
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading1">Texto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#scrollspyHeading2">Video</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">+ opciones</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#scrollspyHeading3">Foto</a></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading4">Tabla</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#scrollspyHeading5">Toggle</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example mt-3" tabindex="0">
+      <h4 class="mt-3 bg-success text-light mx-5 px-3" id="scrollspyHeading1">Texto</h4>
+      <div class="container">
+        <div class="row b-b">
+          <p class="p-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto ut incidunt praesentium excepturi eaque soluta iusto tempore! Quae vel consequatur veritatis, accusamus quis fugiat asperiores quam ratione consectetur deleniti saepe corrupti cumque dolore, ipsa perspiciatis inventore odit beatae nisi distinctio?</p>
+        </div>
+      </div>
+      <h4 class="mt-3 bg-success text-light mx-5 px-3"  id="scrollspyHeading2">Video</h4>
+      <div class="container text-center">
+        <iframe class="border mt-3 p-3" width="560" height="315" src="https://www.youtube.com/embed/fUQed1b4zlI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+      <h4 class="mt-3 bg-success text-light mx-5 px-3"  id="scrollspyHeading3">Foto</h4>
+      <div class="container ">
+        <div class="row p-3 b-b">
+          <img class=" col-6 w-50 img-fluid" src="./img/foto4.jpg" alt="...">
+          <p class="col-6 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi ratione at perspiciatis aspernatur similique doloribus iusto perferendis dolorem. Perspiciatis aut, repellat voluptate animi reprehenderit ab exercitationem placeat nemo illum eveniet!</p>
+        </div>
+      </div>
+      <h4 class="mt-3 bg-success text-light mx-5 px-3"  id="scrollspyHeading4">Tabla</h4>
+      <div class="container text-center">
+        <table class="table table-hover bg-light p-3 mt-4 mb-3 b-b">
+          <thead>
+              <th scope="col">#</th>
+              <th scope="col">First</th>
+              <th scope="col">Last</th>
+              <th scope="col">Handle</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="table-primary">
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Jacob</td>
+              <td>Thornton</td>
+              <td>@fat</td>
+            </tr>
+            <tr class="table-primary">
+              <th scope="row">3</th>
+              <td colspan="2">Larry the Bird</td>
+              <td>@twitter</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <h4 class="mt-3 bg-success text-light mx-5 px-3"  id="scrollspyHeading5">Toogle</h4>
+      <div class="container text-center"> 
+        <p>
+          <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle ejemplo 1</a>
+          <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle ejemplo 2</button>
+        </p>
+        <div class="row">
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample1">
+              <div class="card card-body">
+                Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="collapse multi-collapse" id="multiCollapseExample2">
+              <img src="./img/logo.jpg" alt="..." class="w-50">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

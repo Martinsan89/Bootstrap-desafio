@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style4.css" />
+    <title>Desafio Bootstrap</title>
+  </head>
+  <body>
+      <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand text-style" href="#">Desafio Bootstrap</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav flex-row justify-content-end">
+            <li class="nav-item p-1 m-2 borderstyle">
+              <a
+                class="nav-link active text-success"
+                aria-current="page"
+                href="idea1.html"
+                >Idea 1</a
+              >
+            </li>
+            <li class="nav-item p-1 m-2 borderstyle">
+              <a class="nav-link text-important" href="idea2.html">Idea 2</a>
+            </li>
+            <li class="nav-item p-1 m-2 borderstyle">
+              <a class="nav-link text-body" href="idea3.html">Idea 3</a>
+            </li>
+            <li class="nav-item dropdown p-1 m-2 borderstyle">
+              <a
+                class="nav-link dropdown-toggle text-danger"
+                href="#"
+                id="navbarDropdownMenuLink"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Idea 4
+              </a>
+              <ul
+                class="dropdown-menu"
+                aria-labelledby="navbarDropdownMenuLink"
+              >
+                <li>
+                  <a class="dropdown-item" href="idea4.html">Formulario</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- logo y parrafo -->
+      <div class="container">
+        <a class="navbar-brand">
+          <img
+            class="text-center radius"
+            src="./img/logo.jpg"
+            alt=""
+            width="130"
+            height="124"
+          />
+        </a>
+        <p class="text-right bg-dark text-light radius mx-2 p-3">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </p>
+      </div>
+    </nav>
+    <!-- Formulario -->
+    <div class="container col-12">
+      <form class="row g-3 mt-3">
+        <div class="col-md-6">
+          <label for="inputEmail4" class="form-label text-light">Nombre</label>
+          <input type="email" class="form-control" id="inputEmail4" />
+        </div>
+        <div class="col-md-6">
+          <label for="inputPassword4" class="form-label text-light"
+            >Apellido</label
+          >
+          <input type="password" class="form-control" id="inputPassword4" />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress" class="form-label text-light"
+            >Direccion</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress"
+            placeholder="Complete aqui con su direccion"
+          />
+        </div>
+        <div class="col-12">
+          <label for="inputAddress2" class="form-label text-light"
+            >Descripcion</label
+          >
+          <input
+            type="text"
+            class="form-control"
+            id="inputAddress2"
+            placeholder="Departamento, estudio o piso"
+          />
+        </div>
+        <div class="col-md-6">
+          <label for="inputCity" class="form-label text-light">Pais</label>
+          <input type="text" class="form-control" id="inputCity" />
+        </div>
+        <div class="col-md-4">
+          <label for="inputState" class="form-label text-light"
+            >Provincia</label
+          >
+          <select id="inputState" class="form-select">
+            <option selected>Seleccione</option>
+            <option>Buenos Aires</option>
+            <option>CABA</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <label for="inputZip" class="form-label">C.P.</label>
+          <input type="text" class="form-control" id="inputZip" />
+        </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" id="gridCheck" />
+            <label class="form-check-label text-light" for="gridCheck">
+              Recuerdame
+            </label>
+          </div>
+        </div>
+    </form>
+    <!-- Botones -->
+      <div class="container">
+          <div class="row mt-3">
+            <div class="col-2">
+                <button type="submit" class="btn btn-primary">Enlistar</button>
+            </div>
+            <div class="col-4 px-5">
+                <button
+          class="btn btn-primary"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasTop"
+          aria-controls="offcanvasTop"
+        >
+          Informacion
+        </button>
+        <div
+          class="offcanvas offcanvas-top"
+          tabindex="-1"
+          id="offcanvasTop"
+          aria-labelledby="offcanvasTopLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 id="offcanvasTopLabel">Para mas informacion consulte a su operador</h5>
+            <button
+              type="button"
+              class="btn-close text-reset"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">Por cualquier plataforma digital</div>
+        </div>        
+      </div>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

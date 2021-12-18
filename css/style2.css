@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(240, 231, 219);
+}
+.inline {
+  display: inline;
+}
+.radius {
+  border-radius: 40px;
+}
+.b-b {
+  border-bottom: 3px solid black;
+}

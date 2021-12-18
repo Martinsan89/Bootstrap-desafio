@@ -1,0 +1,37 @@
+body {
+  background-color: rgb(9, 17, 129);
+}
+.text-style {
+  font-size: 40px;
+  font-family: serif;
+  font-weight: 500;
+}
+
+.radius {
+  border-radius: 40px;
+}
+
+.borderstyle {
+  border: black 3px solid;
+}
+
+.border {
+  border: 5px black solid;
+}
+
+.carousel-inner {
+  height: 30rem;
+}
+
+.carousel-item img {
+  height: 30rem;
+}
+
+.p-style {
+  font-size: 2rem;
+  font-style: oblique;
+}
+
+.tamano {
+  width: fit-content;
+}
